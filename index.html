@@ -162,35 +162,395 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <img src="Assets/portfolio1-placeholder.jpg" alt="Portfolio 1">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="building1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#2c5aa0;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="building2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#50c878;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#2e7d32;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="mergedBuilding" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#9c27b0;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#6a1b66;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Background -->
+                            <rect width="300" height="200" fill="#f0f8ff" />
+
+                            <!-- Company A Building -->
+                            <rect x="30" y="80" width="60" height="100" fill="url(#building1)" rx="3" />
+                            <rect x="35" y="90" width="8" height="8" fill="#ffffff" opacity="0.8" />
+                            <rect x="47" y="90" width="8" height="8" fill="#ffffff" opacity="0.8" />
+                            <rect x="59" y="90" width="8" height="8" fill="#ffffff" opacity="0.8" />
+                            <rect x="35" y="105" width="8" height="8" fill="#ffffff" opacity="0.8" />
+                            <rect x="47" y="105" width="8" height="8" fill="#ffffff" opacity="0.8" />
+                            <rect x="59" y="105" width="8" height="8" fill="#ffffff" opacity="0.8" />
+
+                            <!-- Company B Building -->
+                            <rect x="210" y="90" width="60" height="90" fill="url(#building2)" rx="3" />
+                            <rect x="215" y="100" width="8" height="8" fill="#ffffff" opacity="0.8" />
+                            <rect x="227" y="100" width="8" height="8" fill="#ffffff" opacity="0.8" />
+                            <rect x="239" y="100" width="8" height="8" fill="#ffffff" opacity="0.8" />
+                            <rect x="215" y="115" width="8" height="8" fill="#ffffff" opacity="0.8" />
+                            <rect x="227" y="115" width="8" height="8" fill="#ffffff" opacity="0.8" />
+                            <rect x="239" y="115" width="8" height="8" fill="#ffffff" opacity="0.8" />
+
+                            <!-- Arrow showing merger -->
+                            <path d="M 110 130 Q 150 110 190 130" stroke="#ff6b35" stroke-width="4" fill="none"
+                                marker-end="url(#arrowhead1)" />
+                            <path d="M 190 130 Q 150 150 110 130" stroke="#ff6b35" stroke-width="4" fill="none" />
+
+                            <!-- Arrow marker -->
+                            <defs>
+                                <marker id="arrowhead1" markerWidth="10" markerHeight="7" refX="9" refY="3.5"
+                                    orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#ff6b35" />
+                                </marker>
+                            </defs>
+
+                            <!-- Merged Company Building (larger, centered) -->
+                            <rect x="120" y="40" width="80" height="140" fill="url(#mergedBuilding)" rx="5"
+                                opacity="0.3" />
+                            <text x="150" y="160" font-family="Arial" font-size="12" fill="#6a1b66" text-anchor="middle"
+                                font-weight="bold" opacity="0.7">MERGED</text>
+
+                            <!-- Plus sign -->
+                            <circle cx="150" cy="130" r="15" fill="#ff6b35" opacity="0.9" />
+                            <text x="150" y="137" font-family="Arial" font-size="20" fill="white" text-anchor="middle"
+                                font-weight="bold">+</text>
+                        </svg>
                     </div>
                     <h3>Corporate Merger</h3>
                     <p>Advised on a multi-million dollar corporate merger for a leading firm.</p>
                 </div>
+
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <img src="Assets/portfolio2-placeholder.jpg" alt="Portfolio 2">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="house" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8bc34a;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#4caf50;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="key" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#ffc107;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Sky background -->
+                            <rect width="300" height="120" fill="#87ceeb" />
+                            <!-- Ground -->
+                            <rect y="120" width="300" height="80" fill="#90ee90" />
+
+                            <!-- House -->
+                            <polygon points="100,80 150,40 200,80 200,160 100,160" fill="url(#house)" />
+                            <!-- Roof -->
+                            <polygon points="90,80 150,30 210,80" fill="#8b4513" />
+                            <!-- Door -->
+                            <rect x="135" y="130" width="30" height="30" fill="#654321" />
+                            <circle cx="158" cy="145" r="2" fill="#ffd700" />
+                            <!-- Windows -->
+                            <rect x="115" y="100" width="15" height="15" fill="#87ceeb" />
+                            <rect x="170" y="100" width="15" height="15" fill="#87ceeb" />
+
+                            <!-- Large golden key -->
+                            <g transform="translate(50, 50)">
+                                <rect x="0" y="15" width="80" height="8" fill="url(#key)" rx="4" />
+                                <circle cx="85" cy="19" r="12" fill="url(#key)" stroke="#e68900" stroke-width="2" />
+                                <circle cx="85" cy="19" r="6" fill="none" stroke="#e68900" stroke-width="2" />
+                                <rect x="95" y="12" width="6" height="8" fill="url(#key)" />
+                                <rect x="95" y="26" width="6" height="6" fill="url(#key)" />
+                            </g>
+
+                            <!-- Contract/Document -->
+                            <rect x="220" y="100" width="60" height="80" fill="white" stroke="#ccc" stroke-width="2"
+                                rx="3" />
+                            <rect x="225" y="105" width="50" height="3" fill="#333" />
+                            <rect x="225" y="115" width="40" height="2" fill="#666" />
+                            <rect x="225" y="125" width="45" height="2" fill="#666" />
+                            <rect x="225" y="135" width="35" height="2" fill="#666" />
+                            <rect x="225" y="155" width="30" height="8" fill="#ff4444" rx="2" />
+                            <text x="240" y="161" font-family="Arial" font-size="6" fill="white"
+                                text-anchor="middle">SOLD</text>
+
+                            <!-- Arrow from key to house -->
+                            <path d="M 120 70 L 140 90" stroke="#333" stroke-width="3" marker-end="url(#smallArrow2)" />
+                            <defs>
+                                <marker id="smallArrow2" markerWidth="8" markerHeight="6" refX="7" refY="3"
+                                    orient="auto">
+                                    <polygon points="0 0, 8 3, 0 6" fill="#333" />
+                                </marker>
+                            </defs>
+                        </svg>
                     </div>
                     <h3>Property Acquisition</h3>
                     <p>Handled complex property acquisition and title transfer for a client.</p>
                 </div>
+
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <img src="Assets/portfolio3-placeholder.jpg" alt="Portfolio 3">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="courthouse" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#f5f5f5;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#d3d3d3;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="gavel" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8b4513;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Sky -->
+                            <rect width="300" height="200" fill="#4682b4" />
+
+                            <!-- Courthouse building -->
+                            <rect x="50" y="80" width="200" height="100" fill="url(#courthouse)" />
+                            <!-- Columns -->
+                            <rect x="70" y="80" width="15" height="100" fill="#ffffff" />
+                            <rect x="95" y="80" width="15" height="100" fill="#ffffff" />
+                            <rect x="120" y="80" width="15" height="100" fill="#ffffff" />
+                            <rect x="145" y="80" width="15" height="100" fill="#ffffff" />
+                            <rect x="170" y="80" width="15" height="100" fill="#ffffff" />
+                            <rect x="195" y="80" width="15" height="100" fill="#ffffff" />
+                            <rect x="220" y="80" width="15" height="100" fill="#ffffff" />
+
+                            <!-- Pediment -->
+                            <polygon points="40,80 150,40 260,80" fill="#ffffff" />
+
+                            <!-- Steps -->
+                            <rect x="45" y="170" width="210" height="10" fill="#c0c0c0" />
+                            <rect x="40" y="180" width="220" height="20" fill="#a0a0a0" />
+
+                            <!-- Door -->
+                            <rect x="135" y="140" width="30" height="40" fill="#8b4513" />
+
+                            <!-- Scales of Justice -->
+                            <g transform="translate(20, 30)">
+                                <!-- Stand -->
+                                <rect x="48" y="60" width="4" height="60" fill="#b8860b" />
+                                <!-- Base -->
+                                <ellipse cx="50" cy="125" rx="15" ry="5" fill="#b8860b" />
+                                <!-- Balance beam -->
+                                <rect x="25" y="73" width="50" height="3" fill="#b8860b" />
+                                <!-- Left scale -->
+                                <path d="M 30 76 L 25 85 L 35 85 Z" fill="#b8860b" />
+                                <ellipse cx="30" cy="85" rx="8" ry="3" fill="#silver" />
+                                <!-- Right scale -->
+                                <path d="M 70 76 L 65 85 L 75 85 Z" fill="#b8860b" />
+                                <ellipse cx="70" cy="85" rx="8" ry="3" fill="#silver" />
+                                <!-- Center support -->
+                                <circle cx="50" cy="75" r="3" fill="#b8860b" />
+                            </g>
+
+                            <!-- Large Gavel -->
+                            <g transform="translate(220, 20) rotate(25)">
+                                <!-- Handle -->
+                                <rect x="0" y="20" width="60" height="8" fill="url(#gavel)" rx="4" />
+                                <!-- Head -->
+                                <rect x="55" y="10" width="25" height="28" fill="url(#gavel)" rx="3" />
+                                <!-- Metal band -->
+                                <rect x="60" y="8" width="15" height="32" fill="#silver" opacity="0.7" />
+                            </g>
+
+                            <!-- Stars indicating significance -->
+                            <g fill="#ffd700">
+                                <polygon points="280,40 285,50 296,50 287,58 290,69 280,63 270,69 273,58 264,50 275,50"
+                                    transform="scale(0.6)" />
+                                <polygon points="40,25 45,35 56,35 47,43 50,54 40,48 30,54 33,43 24,35 35,35"
+                                    transform="scale(0.5)" />
+                                <polygon points="260,20 265,30 276,30 267,38 270,49 260,43 250,49 253,38 244,30 255,30"
+                                    transform="scale(0.4)" />
+                            </g>
+
+                            <!-- "LANDMARK" text banner -->
+                            <rect x="80" y="15" width="140" height="20" fill="#dc143c" opacity="0.9" rx="10" />
+                            <text x="150" y="28" font-family="Arial" font-size="12" fill="white" text-anchor="middle"
+                                font-weight="bold">LANDMARK CASE</text>
+                        </svg>
                     </div>
                     <h3>Landmark Litigation</h3>
                     <p>Successfully represented a client in a high-profile litigation case.</p>
                 </div>
+
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <img src="Assets/portfolio4-placeholder.jpg" alt="Portfolio 4">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="table" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#d2b48c;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#a0522d;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Background -->
+                            <rect width="300" height="200" fill="#f0f8ff" />
+
+                            <!-- Conference room -->
+                            <rect x="20" y="20" width="260" height="160" fill="#e6f3ff" stroke="#b0d4f1"
+                                stroke-width="2" rx="10" />
+
+                            <!-- Conference table -->
+                            <ellipse cx="150" cy="120" rx="80" ry="30" fill="url(#table)" />
+
+                            <!-- Mediator (top) -->
+                            <circle cx="150" cy="80" r="15" fill="#fdbcb4" />
+                            <rect x="140" y="95" width="20" height="25" fill="#4a90e2" rx="3" />
+                            <text x="150" y="65" font-family="Arial" font-size="8" text-anchor="middle"
+                                font-weight="bold" fill="#333">MEDIATOR</text>
+
+                            <!-- Party A (left) -->
+                            <circle cx="90" cy="120" r="12" fill="#fdbcb4" />
+                            <rect x="82" y="132" width="16" height="20" fill="#50c878" rx="2" />
+                            <text x="90" y="105" font-family="Arial" font-size="7" text-anchor="middle"
+                                fill="#333">Party A</text>
+
+                            <!-- Party B (right) -->
+                            <circle cx="210" cy="120" r="12" fill="#fdbcb4" />
+                            <rect x="202" y="132" width="16" height="20" fill="#ff6b6b" rx="2" />
+                            <text x="210" y="105" font-family="Arial" font-size="7" text-anchor="middle"
+                                fill="#333">Party B</text>
+
+                            <!-- Handshake in center -->
+                            <g transform="translate(130, 100)">
+                                <!-- Left hand -->
+                                <path d="M 0 20 Q 5 15 10 20 L 15 25 Q 20 30 15 35 L 10 30 Q 5 25 0 30 Z" fill="#fdbcb4"
+                                    stroke="#e8a598" stroke-width="1" />
+                                <!-- Right hand -->
+                                <path d="M 25 20 Q 30 15 35 20 L 30 25 Q 25 30 30 35 L 35 30 Q 40 25 35 30 Z"
+                                    fill="#fdbcb4" stroke="#e8a598" stroke-width="1" />
+                                <!-- Handshake connection -->
+                                <ellipse cx="20" cy="25" rx="8" ry="6" fill="#f4c2a1" stroke="#e8a598"
+                                    stroke-width="1" />
+                            </g>
+
+                            <!-- Success indicators - checkmarks -->
+                            <g fill="#4caf50">
+                                <path d="M 60 40 L 65 45 L 75 35" stroke="#4caf50" stroke-width="3" fill="none"
+                                    stroke-linecap="round" />
+                                <path d="M 225 40 L 230 45 L 240 35" stroke="#4caf50" stroke-width="3" fill="none"
+                                    stroke-linecap="round" />
+                            </g>
+
+                            <!-- Documents on table -->
+                            <rect x="120" y="140" width="20" height="15" fill="white" stroke="#ccc" rx="2" />
+                            <rect x="160" y="140" width="20" height="15" fill="white" stroke="#ccc" rx="2" />
+                            <rect x="125" y="143" width="10" height="1" fill="#333" />
+                            <rect x="165" y="143" width="10" height="1" fill="#333" />
+
+                            <!-- "RESOLVED" banner -->
+                            <rect x="110" y="165" width="80" height="15" fill="#4caf50" rx="7" />
+                            <text x="150" y="175" font-family="Arial" font-size="10" fill="white" text-anchor="middle"
+                                font-weight="bold">RESOLVED</text>
+
+                            <!-- Peace symbols -->
+                            <g transform="translate(40, 150)">
+                                <circle cx="0" cy="0" r="8" fill="#4caf50" opacity="0.3" />
+                                <path d="M 0 -8 L 0 8 M -6 -3 L 0 8 L 6 -3" stroke="#4caf50" stroke-width="2"
+                                    fill="none" />
+                            </g>
+                            <g transform="translate(250, 150)">
+                                <circle cx="0" cy="0" r="8" fill="#4caf50" opacity="0.3" />
+                                <path d="M 0 -8 L 0 8 M -6 -3 L 0 8 L 6 -3" stroke="#4caf50" stroke-width="2"
+                                    fill="none" />
+                            </g>
+                        </svg>
                     </div>
                     <h3>ADR Success</h3>
                     <p>Resolved a major dispute through arbitration, saving time and cost.</p>
                 </div>
+
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <img src="Assets/portfolio5-placeholder.jpg" alt="Portfolio 5">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="heart" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ff1493;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Peaceful background -->
+                            <rect width="300" height="200" fill="#fff8dc" />
+
+                            <!-- Home base -->
+                            <rect x="100" y="120" width="100" height="60" fill="#deb887" rx="5" />
+                            <polygon points="100,120 150,90 200,120" fill="#8b4513" />
+                            <rect x="130" y="140" width="15" height="20" fill="#654321" />
+                            <rect x="155" y="140" width="15" height="20" fill="#654321" />
+
+                            <!-- Family figures -->
+                            <!-- Parent 1 -->
+                            <circle cx="120" cy="100" r="8" fill="#fdbcb4" />
+                            <rect x="115" y="108" width="10" height="15" fill="#4a90e2" rx="2" />
+
+                            <!-- Parent 2 -->
+                            <circle cx="180" cy="100" r="8" fill="#fdbcb4" />
+                            <rect x="175" y="108" width="10" height="15" fill="#ff69b4" rx="2" />
+
+                            <!-- Child -->
+                            <circle cx="150" cy="110" r="6" fill="#fdbcb4" />
+                            <rect x="147" y="116" width="6" height="12" fill="#50c878" rx="1" />
+
+                            <!-- Protective heart around family -->
+                            <g transform="translate(150, 80)">
+                                <path
+                                    d="M 0 10 C -20 -10, -50 -10, -50 15 C -50 40, 0 70, 0 70 C 0 70, 50 40, 50 15 C 50 -10, 20 -10, 0 10 Z"
+                                    fill="url(#heart)" opacity="0.3" stroke="#ff1493" stroke-width="2" />
+                            </g>
+
+                            <!-- Legal documents -->
+                            <rect x="50" y="40" width="30" height="40" fill="white" stroke="#4a90e2" stroke-width="2"
+                                rx="3" />
+                            <rect x="55" y="45" width="20" height="2" fill="#4a90e2" />
+                            <rect x="55" y="50" width="15" height="1" fill="#666" />
+                            <rect x="55" y="55" width="18" height="1" fill="#666" />
+                            <rect x="55" y="65" width="12" height="6" fill="#4caf50" rx="1" />
+                            <text x="61" y="69" font-family="Arial" font-size="4" fill="white"
+                                text-anchor="middle">CUSTODY</text>
+
+                            <!-- Scales of justice (smaller, balanced) -->
+                            <g transform="translate(220, 50) scale(0.6)">
+                                <rect x="48" y="30" width="4" height="40" fill="#b8860b" />
+                                <ellipse cx="50" cy="75" rx="10" ry="3" fill="#b8860b" />
+                                <rect x="30" y="43" width="40" height="2" fill="#b8860b" />
+                                <!-- Left scale (balanced) -->
+                                <path d="M 35 45 L 32 52 L 38 52 Z" fill="#b8860b" />
+                                <ellipse cx="35" cy="52" rx="6" ry="2" fill="#silver" />
+                                <!-- Right scale (balanced) -->
+                                <path d="M 65 45 L 62 52 L 68 52 Z" fill="#b8860b" />
+                                <ellipse cx="65" cy="52" rx="6" ry="2" fill="#silver" />
+                                <circle cx="50" cy="45" r="2" fill="#b8860b" />
+                            </g>
+
+                            <!-- Olive branch (peace symbol) -->
+                            <g transform="translate(30, 120)">
+                                <path d="M 0 0 Q 10 -5 20 0 Q 30 5 40 0" stroke="#228b22" stroke-width="2"
+                                    fill="none" />
+                                <ellipse cx="8" cy="-2" rx="3" ry="1" fill="#90ee90" transform="rotate(-30)" />
+                                <ellipse cx="15" cy="2" rx="3" ry="1" fill="#90ee90" transform="rotate(30)" />
+                                <ellipse cx="25" cy="-1" rx="3" ry="1" fill="#90ee90" transform="rotate(-20)" />
+                                <ellipse cx="32" cy="3" rx="3" ry="1" fill="#90ee90" transform="rotate(40)" />
+                            </g>
+
+                            <!-- "RESOLVED" with family focus -->
+                            <rect x="110" y="175" width="80" height="15" fill="#4caf50" rx="7" />
+                            <text x="150" y="185" font-family="Arial" font-size="9" fill="white" text-anchor="middle"
+                                font-weight="bold">FAMILY HARMONY</text>
+
+                            <!-- Connecting hearts between family members -->
+                            <path
+                                d="M 3 -3 C -2 -6, -6 -6, -6 -2 C -6 2, 0 6, 0 6 C 0 6, 6 2, 6 -2 C 6 -6, 2 -6, -3 -3 Z"
+                                fill="#ff69b4" opacity="0.6" transform="translate(135, 105) scale(0.5)" />
+                            <path
+                                d="M 3 -3 C -2 -6, -6 -6, -6 -2 C -6 2, 0 6, 0 6 C 0 6, 6 2, 6 -2 C 6 -6, 2 -6, -3 -3 Z"
+                                fill="#ff69b4" opacity="0.6" transform="translate(165, 105) scale(0.5)" />
+                        </svg>
                     </div>
                     <h3>Family Law Resolution</h3>
                     <p>Guided a family through a complex legal process with compassion.</p>
@@ -198,7 +558,6 @@
             </div>
         </div>
     </section>
-
     <!-- Team Section -->
     <section id="team" class="section team">
         <div class="container team-flex">
