@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zircon Chambers</title>
+    <link rel="shortcut icon" href="zircon logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Production version -->
+    <!-- <script src="https://unpkg.com/lucide@latest"></script> -->
+
+</head>
+
+<body>
+    <header id="header" class="header d-flex sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="/zircon_logo-removebg-preview.png" alt="zircon chambers">
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Carousel) -->
+    <section id="hero" class="hero-carousel">
+        <div class="carousel">
+            <!-- ...existing code... -->
+            <div class="carousel-slide active" data-bg="/Assets/use madam justice.png">
+                <div class="carousel-content">
+                    <h1>Zircon Chambers</h1>
+                    <p>legal solutions for your business and personal needs.</p>
+                    <a href="#about" class="btn-get-started">Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-slide" data-bg="Assets/signing madam.png">
+                <div class="carousel-content">
+                    <h1>Expertise, Integrity, Results!</h1>
+                    <p>Our team delivers excellence in every case.</p>
+                    <a href="#services" class="btn-get-started">Available Legal Support</a>
+                </div>
+            </div>
+            <div class="carousel-slide" data-bg="Assets/zircon pic.png">
+                <div class="carousel-content">
+                    <h1>Your Trusted Legal Partner</h1>
+                    <p>Law firm with timeless values.</p>
+                    <a href="#contact" class="btn-get-started">Connect With Us</a>
+                </div>
+            </div>
+            <!-- ...existing code... -->
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Zircon Chambers is a distinguished full-service law firm dedicated to delivering exceptional legal
+                solutions across every facet of the legal landscape. From complex corporate transactions and property
+                acquisitions to high-stakes litigation and delicate family matters, our comprehensive expertise spans
+                Corporate Law, Real Estate, Litigation, Alternative Dispute Resolution, Family Law, Contract Drafting,
+                Employment Law, and specialized advisory services.
+                What sets us apart is our unwavering commitment to understanding each client's unique circumstances and
+                objectives. Our seasoned legal professionals don't just practice law—they craft strategic solutions
+                tailored to your specific needs. Whether you're a growing business navigating regulatory complexities,
+                an individual facing a challenging legal dispute, or a family requiring sensitive guidance through
+                difficult transitions, we bring clarity to confusion and strength to uncertainty.
+                At Zircon Chambers, we believe that exceptional legal representation should be both accessible and
+                results-driven. Our track record speaks through the successful outcomes we've secured for clients across
+                diverse industries and personal situations. We combine rigorous legal knowledge with practical business
+                acumen, ensuring that every decision we help you make is not only legally sound but strategically
+                advantageous.
+                Experience the difference that dedicated, experienced counsel can make in your legal journey. When the
+                stakes matter most, Zircon Chambers stands ready to protect your interests and achieve your goals with
+                the precision and tenacity that complex legal challenges demand.
+            </p>
+            <div class="about-features">
+                <div class="feature">
+                    <h3>Our Mission</h3>
+                    <p>To deliver innovative legal solutions with integrity and professionalism.</p>
+                </div>
+                <div class="feature">
+                    <h3>Our Vision</h3>
+                    <p>To be the leading law firm in modern legal practice, trusted for all legal services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="services-list">
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="scale" style="width: 50px; height: 50px;"></i></div>
+                    <h3>Corporate Law</h3>
+                    <p>Legal support for businesses, startups, and enterprises.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="building-2" style="width: 50px; height: 50px;"></i></div>
+                    <h3>Property Law</h3>
+                    <p>Expertise in real estate transactions, property disputes, and conveyancing.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="swords" style="width: 50px; height: 50px;"></i></div>
+                    <h3>Litigation</h3>
+                    <p>Representation in civil, commercial, and criminal cases.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="handshake" style="width: 50px; height: 50px;"></i></i>
+                    </div>
+                    <h3>Alternative Dispute Resolution</h3>
+                    <p>Mediation, arbitration, and negotiation for swift resolutions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="users" style="width: 50px; height: 50px;"></i></div>
+                    <h3>Family Law</h3>
+                    <p>Guidance through divorce, custody, and family matters.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="file-edit" style="width: 50px; height: 50px;"></i></div>
+                    <h3>Contract Drafting</h3>
+                    <p>Clear, enforceable contracts tailored to your needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="shield-check" style="width: 50px; height: 50px;"></i>
+                    </div>
+                    <h3>Other Legal Services</h3>
+                    <p>We cover all aspects of law. Contact us for your specific needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="Assets/portfolio1-placeholder.jpg" alt="Portfolio 1">
+                    </div>
+                    <h3>Corporate Merger</h3>
+                    <p>Advised on a multi-million dollar corporate merger for a leading firm.</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="Assets/portfolio2-placeholder.jpg" alt="Portfolio 2">
+                    </div>
+                    <h3>Property Acquisition</h3>
+                    <p>Handled complex property acquisition and title transfer for a client.</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="Assets/portfolio3-placeholder.jpg" alt="Portfolio 3">
+                    </div>
+                    <h3>Landmark Litigation</h3>
+                    <p>Successfully represented a client in a high-profile litigation case.</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="Assets/portfolio4-placeholder.jpg" alt="Portfolio 4">
+                    </div>
+                    <h3>ADR Success</h3>
+                    <p>Resolved a major dispute through arbitration, saving time and cost.</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="Assets/portfolio5-placeholder.jpg" alt="Portfolio 5">
+                    </div>
+                    <h3>Family Law Resolution</h3>
+                    <p>Guided a family through a complex legal process with compassion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section team">
+        <div class="container team-flex">
+            <h2 class="team-title">The Zircon Team</h2>
+            <div class="team-content">
+                <div class="team-image">
+                    <img src="Assets/team.png" alt="Teamwork" />
+                </div>
+                <div class="team-info">
+                    <p class="team-intro">
+                        At Zircon Chambers, our team is the backbone of our success. Each member brings a wealth of
+                        experience,
+                        unwavering integrity, and a passion for justice. We believe in building trust through
+                        transparency and
+                        delivering results through collaboration. Our lawyers are not just experts in their fields—they
+                        are
+                        dedicated partners who walk with you every step of the way, ensuring your interests are
+                        protected and
+                        your goals achieved. With a proven track record and a client-first approach, you can rely on us
+                        for
+                        effective, reliable, and innovative legal solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Our Contact</h2>
+            <!-- <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form> -->
+            <div class="contact-info">
+                <div class="contact-details">
+                    <div class="contact-card">
+                        <i data-lucide="phone" style="width: 28px; height: 28px; color: #000;"></i>
+                        <div>
+                            <strong>Call us</strong>
+                            <p>+234 816 505 9726</p>
+                            <p>+234 805 654 8010</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i data-lucide="mail" style="width: 28px; height: 28px; color: #000;"></i>
+                        <div>
+                            <strong>Email Us</strong>
+                            <p>info@zirconchambers.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i data-lucide="map-pin" style="width: 28px; height: 28px; color: #aa1931;"></i>
+                        <div>
+                            <strong>Find Us</strong>
+                            <p>Suite 103B, 1st Floor Opic Plaza,<br>Mobolaji Bank Anthony Way, Ikeja, Lagos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <!-- Place your Google Maps iframe here -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d150842.71647644448!2d3.3387530259868226!3d6.5410145132566955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSuite%20103B%2C%20%201st%20Floor%20Opic%20Plaza%2C%20Mobolaji%20Bank%20Anthony%20Way%2C%20Ikeja%2C%20Lagos!5e0!3m2!1sen!2sng!4v1756066397114!5m2!1sen!2sng"
+                        width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>
