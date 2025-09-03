@@ -25,9 +25,12 @@
     <header id="header" class="header d-flex sticky-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
             <a href="index.html" class="logo d-flex align-items-center me-auto">
-                <img src="/zircon_logo-removebg-preview.png" alt="zircon chambers">
+                <img src="Assets/zircon_logo-removebg-preview.png" alt="zircon chambers">
             </a>
             <nav id="navmenu" class="navmenu">
+                <button class="mobile-nav-toggle" aria-label="Open menu">
+                    <i data-lucide="menu"></i>
+                </button>
                 <ul>
                     <li><a href="#hero" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -36,7 +39,7 @@
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                <div class="nav-overlay"></div>
             </nav>
         </div>
     </header>
@@ -598,7 +601,7 @@
             <div class="contact-info">
                 <div class="contact-details">
                     <div class="contact-card">
-                        <i data-lucide="phone" style="width: 28px; height: 28px; color: #000;"></i>
+                        <i id="contact-phone" data-lucide="phone" style="width: 28px; height: 28px; color: #000;"></i>
                         <div>
                             <strong>Call us</strong>
                             <p>+234 816 505 9726</p>
@@ -606,10 +609,10 @@
                         </div>
                     </div>
                     <div class="contact-card">
-                        <i data-lucide="mail" style="width: 28px; height: 28px; color: #000;"></i>
+                        <i id="contact-mail" data-lucide="mail" style="width: 28px; height: 28px; color: #000;"></i>
                         <div>
                             <strong>Email Us</strong>
-                            <p>info@zirconchambers.com</p>
+                            <p>zirconchambers20@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-card">
@@ -624,12 +627,39 @@
                     <!-- Place your Google Maps iframe here -->
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d150842.71647644448!2d3.3387530259868226!3d6.5410145132566955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSuite%20103B%2C%20%201st%20Floor%20Opic%20Plaza%2C%20Mobolaji%20Bank%20Anthony%20Way%2C%20Ikeja%2C%20Lagos!5e0!3m2!1sen!2sng!4v1756066397114!5m2!1sen!2sng"
-                        width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="100%" height="270px" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="footer-logo">
+                <img src="Assets/zircon_logo-removebg-preview.png" alt="Zircon Chambers Logo" class="footer-logo-img"
+                    id="footer-logo">
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2025 Zircon Chambers. All rights reserved.</p>
+                <p>
+                    Suite 103B, 1st Floor Opic Plaza, Mobolaji Bank Anthony Way, Ikeja, Lagos.<br>
+                    <a href="mailto:info@zirconchambers.com">zirconchambers20@gmail.com</a> |
+                    <a href="tel:+2348165059726">+234 816 505 9726</a>
+                </p>
+            </div>
+
+            <!--when social media is set uncomment below -->
+
+            <!-- <div class="footer-social">
+                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            </div> -->
+        </div>
+    </footer>
+    <!-- footer end -->
 
     <script src="js/main.js"></script>
 
