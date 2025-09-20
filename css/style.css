@@ -551,6 +551,14 @@ body {
     text-align: justify;
 }
 
+@media (max-width: 600px) {
+    .about p,
+    .team-info p {
+        text-align: left;
+    }
+}
+
+
 .footer {
     background: #b3bdc4;
     color: #222;
